@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="logo">
+    <ion-icon color="light" name="person-circle"></ion-icon>
+  </div>
+  <div class="formulaire">
+    <ion-item lines="none">
+      <ion-label color="light"><b>Email</b></ion-label>
+      <ion-input color="light" [(ngModel)]="loginData.email" type="email" placeholder="Entrez votre email"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label color="light"><b>Mot de passe</b></ion-label>
+      <ion-input [(ngModel)]="loginData.password"  color="light"  type="password" placeholder="Entrez votre mot de passe"></ion-input>
+    </ion-item>
+  </div> <br> <br>
+
+  <div class="ion-padding">
+    <ion-button (click)="login()" shape="round" fill="outline"  expand="block"  color="light">Connexion</ion-button>
+    <ion-item lines="none">
+      <ion-label color="light"  class="ion-text-center">Ou</ion-label>
+    </ion-item>
+
+    <ion-button (click)="signup()" shape="round" expand="block" color="tertiary">Inscription</ion-button>
+  </div>
+</ion-content>
+
