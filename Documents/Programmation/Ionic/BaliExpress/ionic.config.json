@@ -1,0 +1,7 @@
+{
+  "name": "BaliExpress",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
